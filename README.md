@@ -1,17 +1,24 @@
 # Website-UTS
 Later
 
-Nama ...
-NIM ...
-Prodi ...
-Angkatan ...
+Nama: Klement Ezra Suhartanto
+NIM: 25051204082
+Prodi: Teknik Informatika
+Angkatan: 2025
 
 Picture Credits
 Hina-Mempelai -gabang (Pixiv)
 Nwkogeminisensei-Mempelai -Blue Archive Wiki
 Holding-Hands -stocksnap (pixabay)
 
-Many on CSS made with AI
-Bug fixing with AI
+Audio Credit 
+Midnight trips -Nor
+
+Notice: In the making of this website is using AI 
+
+Things made using AI:
+some of .css  file
+some of .html file
+all of .js
 
 Reference from AI
