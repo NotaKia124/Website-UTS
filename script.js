@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const musik = document.getElementById("Musik-Latar");
     musik.volume = 0.2;
-
+    musik.play();
     const tombolMusik = document.getElementById("Tombol-Musik");
     const ikonMusik = document.getElementById("Ikon-Musik");
 
