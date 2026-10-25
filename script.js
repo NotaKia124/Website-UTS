@@ -2,7 +2,14 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const musik = document.getElementById("Musik-Latar");
-    musik.volume = 0.2
+    if (musik) {
+    musik.volume = 0.2;
+
+    musik.play().catch(function (error) {
+        console.log(
+            "Autoplay diblokir browser. Pengunjung perlu menekan tombol musik."
+        );
+    });
 
     const tombolMusik = document.getElementById("Tombol-Musik");
     const ikonMusik = document.getElementById("Ikon-Musik");
