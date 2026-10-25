@@ -18,5 +18,4 @@ Things made using AI:
 - some of .css  file
 - some of .html file
 - all of .js
-
-Reference from AI
+- References
