@@ -16,32 +16,6 @@ body {
     padding-top: 56px;
     background-color: var(--whitepurple);
 }
-
-/*navbar Momenyt*/
-#NavBar {
-    background-color: var(--lightpurple);
-    width: 100%;
-}
-
-.navbar-brand {
-    font-family: var(--script);
-    font-size: 25px;
-    color: var(--darkpurple);
-}
-
-.navbar-brand:hover {
-    color: var(--darkpurple);
-}
-
-#NavBar .nav-link {
-    color: var(--darkpurple);
-    transition: color 0.3s ease;
-}
-
-#NavBar .nav-link:hover {
-    color: var(--whitepurple);
-}
-
 /*Gambar Home*/
 .Beranda {
     position: relative;
