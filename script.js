@@ -2,35 +2,58 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const musik = document.getElementById("Musik-Latar");
-    musik.volume = 0.2;
-    musik.play();
     const tombolMusik = document.getElementById("Tombol-Musik");
     const ikonMusik = document.getElementById("Ikon-Musik");
+    
+    const pembuka = document.getElementById("Pembuka-Undangan");
+    const tombolBuka = document.getElementById("Tombol-Buka-Undangan");
+    
+    if (tombolBuka && pembuka && musik) {
+        tombolBuka.addEventListener("click", async function () {
+            // Coba mulai musik saat pengunjung berinteraksi.
+            try {
+                musik.volume = 0.2;
+                await musik.play();
+            } catch (error) {
+                console.warn("Musik tidak dapat diputar:", error);
+            }
+        
+            // Mulai animasi menutup halaman pembuka.
+            pembuka.classList.add("tutup");
+        });
+    }
+    
+
+
+    if (musik) {
+        musik.volume = 0.2;
+
+        // Coba putar musik otomatis.
+        // Browser mungkin tetap memblokir autoplay.
+        musik.play().catch(function (error) {
+            console.log("Autoplay diblokir atau musik gagal diputar:", error);
+        });
+    }
 
     if (musik && tombolMusik && ikonMusik) {
         tombolMusik.addEventListener("click", async function () {
-            if (musik.paused) {
-                try {
+            try {
+                if (musik.paused) {
                     await musik.play();
-
-                    ikonMusik.textContent = "♫";
-                    tombolMusik.classList.add("musik-aktif");
-                    tombolMusik.setAttribute("aria-label", "Jeda musik");
-                    tombolMusik.setAttribute("aria-pressed", "true");
-                    tombolMusik.title = "Jeda musik";
-
-                } catch (error) {
-                    console.error("Musik gagal diputar:", error);
-                    alert("Musik gagal diputar. Periksa lokasi file audio.");
+                } else {
+                    musik.pause();
                 }
-            } else {
-                musik.pause();
-
-                tombolMusik.classList.remove("musik-aktif");
-                tombolMusik.setAttribute("aria-label", "Putar musik");
-                tombolMusik.setAttribute("aria-pressed", "false");
-                tombolMusik.title = "Putar musik";
+            } catch (error) {
+                console.error("Musik gagal diputar:", error);
             }
+        });
+
+        musik.addEventListener("play", function () {
+            ikonMusik.textContent = "♫";
+            tombolMusik.classList.add("musik-aktif");
+            tombolMusik.setAttribute("aria-label", "Jeda musik");
+            tombolMusik.setAttribute("aria-pressed", "true");
+            tombolMusik.title = "Jeda musik";
         });
 
         musik.addEventListener("pause", function () {
@@ -39,15 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tombolMusik.setAttribute("aria-pressed", "false");
             tombolMusik.title = "Putar musik";
         });
-
-        musik.addEventListener("play", function () {
-            tombolMusik.classList.add("musik-aktif");
-            tombolMusik.setAttribute("aria-label", "Jeda musik");
-            tombolMusik.setAttribute("aria-pressed", "true");
-            tombolMusik.title = "Jeda musik";
-        });
     }
-
     const formRSVP = document.getElementById("Form-RSVP");
 
     if (formRSVP) {

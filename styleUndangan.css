@@ -11,11 +11,59 @@
   --script: "Great Vibes", cursive;
 }
 
+.Pembuka-Undangan {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 24px;
+
+    text-align: center;
+    background-color: var(--cream);
+    color: var(--darkpurple);
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.Pembuka-Undangan.tutup {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.Pembuka-Undangan h1 {
+    font-family: var(--script);
+    font-size: clamp(42px, 8vw, 76px);
+}
+
+#Tombol-Buka-Undangan {
+    padding: 12px 28px;
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    background-color: var(--purple);
+    color: var(--cream);
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+#Tombol-Buka-Undangan:hover {
+    background-color: var(--darkpurple);
+    transform: scale(1.05);
+}
+
 /*Body*/
 body {
-    padding-top: 56px;
     background-color: var(--whitepurple);
 }
+
 /*Gambar Home*/
 .Beranda {
     position: relative;
