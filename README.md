@@ -15,7 +15,7 @@ Audio Credit
 Notice: In the making of this website is using AI 
 
 Things made using AI:
-- some of .css  file
-- some of .html file
+- some inside .css  file
+- some inside .html file
 - all of .js
 - References
