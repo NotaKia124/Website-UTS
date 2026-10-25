@@ -1,6 +1,4 @@
 # Website-UTS
-Later
-
 Nama: Klement Ezra Suhartanto
 NIM: 25051204082
 Prodi: Teknik Informatika
