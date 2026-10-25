@@ -1,0 +1,528 @@
+/*Variabels*/
+:root {
+  --cream: #faf7f0;
+  --ink: #292d27;
+  --whitepurple : #fbd9ff ;
+  --lightpurple : #aba4d6;
+  --purple: #5e62a9;
+  --darkpurple : #353560;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+  --script: "Great Vibes", cursive;
+}
+
+/*Body*/
+body {
+    padding-top: 56px;
+    background-color: var(--whitepurple);
+}
+
+/*navbar Momenyt*/
+#NavBar {
+    background-color: var(--lightpurple);
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: var(--script);
+    font-size: 25px;
+    color: var(--darkpurple);
+}
+
+.navbar-brand:hover {
+    color: var(--darkpurple);
+}
+
+#NavBar .nav-link {
+    color: var(--darkpurple);
+    transition: color 0.3s ease;
+}
+
+#NavBar .nav-link:hover {
+    color: var(--whitepurple);
+}
+
+/*Gambar Home*/
+.Beranda {
+    position: relative;
+    width: 100%;
+    height: 700px;
+
+    background: url("Assets/Picture/Holding-Hands.jpg") center / cover no-repeat;
+}
+
+.Beranda::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/*Teks bagian Undangan*/
+.Teks-Undangan {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: var(--sans);
+    font-size: 30px;
+    color: var(--cream);
+    text-align: center;
+    text-decoration: none;
+}
+
+#AtasUndangan{
+    top: 10%;
+    white-space: nowrap;
+}
+
+#BawahUndangan{
+    top: 85%;
+    
+    font-size: 18px;
+    white-space: normal;
+}
+
+/*Teks Mempelai*/
+.Teks-Mempelai {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: var(--script);
+    font-size: 125px;
+    font-weight: 400;
+    color: var(--cream);
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+#Hina {
+    top: 25%;
+}
+
+#And {
+    color: var(--purple)
+}
+
+#NwkoGemini {
+    top: 65%;
+}
+
+/*Bagian Informasi Lebih Lanjut*/
+.DetailLanjut {
+    background-color: var();
+    color: #5c4033;
+    width: 100%;
+}
+
+/*Bagian Mempelai*/
+#Bagian-Mempelai {
+    background-color: var(--whitepurple);
+    min-height: 750px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    padding-top: 20px;
+}
+
+.Teks-Awal-Identitas-Mempelai {
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#Kedua-Mempelai {
+    color: var(--purple);
+
+    font-family: var(--script);
+    font-size: 100px;
+}
+
+.Daftar-Mempelai {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.Item-Mempelai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.Foto-Mempelai {
+    width: 250px;
+    height: 325px;
+
+    border: 10px solid white;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 0 0 2px var(--purple);
+    overflow: hidden;
+}
+
+.Foto-Mempelai img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center 60%;
+}
+
+.Bagian-Teks-Identitas-Mempelai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 8px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Teks-Identitas-Mempelai {
+    display: block;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+#Nama-Hina,#Nama-Nwko {
+    font-family: var(--script);
+    font-size: 32px;
+    color: var(--purple);
+}
+
+#Detail-Hina,#Detail-Nwko {
+    font-family: var(--sans);
+    font-size: 14px;
+}
+
+#Gambar-And {
+    align-self: center;
+    margin: 0;
+    color: var(--purple);
+    font-family: var(--script);
+    font-size: 50px;
+}
+
+/*Bagian Acara dan Lokasi*/
+#Bagian-Pendaftaran-Dan-Lokasi {
+    background-color: var(--cream);
+    padding: 60px 30px;
+}
+
+.Acara-Header {
+    margin-bottom: 40px;
+    color: var(--ink);
+}
+
+.Acara-Header h1 {
+    font-family: var(--serif);
+    font-size: 60px;
+}
+
+.Acara-Header a {
+    font-family: var(--sans);
+}
+
+#Bagian-Acara {
+    height: 750px;
+    width: 400px;
+
+    border: 2px solid var(--lightpurple);
+    border-radius: 10px;
+    margin: 75px;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    transition: transform 0.3s cubic-bezier(0.3, 0.5, 1, 1);
+}
+
+#Bagian-Acara:hover {
+    transform: translateY(-10px);
+}
+
+#Bagian-Acara h4 {
+    font-family: var(--script);
+    color: var(--darkpurple);
+
+    font-size: 50px;
+
+    margin-top: 20px;
+}
+
+#Bagian-Acara a {
+    font-family: var(--serif);
+    color: var(--darkpurple);
+}
+
+.Detail-Pemberkatan {
+    display: flex;
+    flex-direction: column;
+
+    height: 200px;
+    width: 300px;
+
+    align-content: center;
+
+    margin-left: 75px;
+}
+
+.Detail-Pemberkatan a {
+    text-decoration: none;
+}
+
+.Detail-Tanggal{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.Detail-Waktu {
+    margin-top: 5px;
+}
+
+.Detail-Tempat{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/*Bagian Pendaftaran*/
+.Bagian-Pendaftaran {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 35px;
+    color: var(--darkpurple);
+    border-radius: 16px;
+}
+
+.Form-Header {
+    width: 100%;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Form-Header h2 {
+    font-family: var(--script);
+    font-size: 90px;
+    
+    white-space: nowrap;
+    margin-bottom: 12px;
+}
+
+.Form-Header p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#Form-RSVP {
+    width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
+}
+
+/* Label setiap input */
+.Bagian-Pendaftaran .form-label {
+    display: block;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--darkpurple);
+    margin-bottom: 8px;
+}
+
+/* Input teks, textarea, dan dropdown */
+.Bagian-Pendaftaran .form-control,.Bagian-Pendaftaran .form-select {
+    width: 100%;
+    min-height: 48px;
+
+    padding: 12px 14px;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--ink);
+    background-color: var(--cream);
+    border: 1px solid var(--lightpurple);
+    border-radius: 10px;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+/* Warna placeholder */
+.Bagian-Pendaftaran .form-control::placeholder {
+    color: #9692ad;
+    opacity: 1;
+}
+
+/* Efek saat input dipilih */
+.Bagian-Pendaftaran .form-control:focus,.Bagian-Pendaftaran .form-select:focus {
+    color: var(--ink);
+    background-color: #ffffff;
+    border-color: var(--purple);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(94, 98, 169, 0.15);
+}
+
+/* Jarak antar kolom form */
+.Bagian-Pendaftaran .mb-3 {
+    margin-bottom: 22px !important;
+}
+
+/* Tombol kirim */
+.btn-rsvp {
+    width: 100%;
+    padding: 13px 18px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: var(--purple);
+    color: var(--cream);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Hover tombol */
+.btn-rsvp:hover {
+    background-color: var(--darkpurple);
+    color: #ffffff;
+    border-color: var(--darkpurple);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(53, 53, 96, 0.2);
+}
+
+/* Efek saat tombol ditekan */
+.btn-rsvp:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Pesan setelah form dikirim */
+#Pesan-RSVP {
+    width: 100%;
+    max-width: 750px;
+
+    text-align: center;
+    color: var(--purple);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Tampilan layar HP */
+@media (max-width: 750px) {
+    .Bagian-Pendaftaran {
+        padding: 24px 18px;
+        margin: 25px auto;
+    }
+
+    .Form-Header h2 {
+        font-size: clamp(48px, 12vw, 70px);
+        white-space: normal;
+    }
+
+    .Form-Header p {
+        font-size: 13px;
+    }
+
+    .Bagian-Pendaftaran .form-control,
+    .Bagian-Pendaftaran .form-select {
+        padding: 11px 12px;
+    }
+}
+
+
+/* Tombol musik mengambang */
+.Tombol-Musik {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1050;
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid var(--whitepurple);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--purple);
+    color: var(--cream);
+
+    font-size: 30px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 15px rgba(53, 53, 96, 0.3);
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.Tombol-Musik:hover {
+    background-color: var(--darkpurple);
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(53, 53, 96, 0.4);
+}
+
+.Tombol-Musik:focus-visible {
+    outline: 3px solid var(--lightpurple);
+    outline-offset: 4px;
+}
+
+/* Animasi saat musik dimainkan */
+.Tombol-Musik.musik-aktif #Ikon-Musik {
+    animation: Putar-Ikon 3s linear infinite;
+}
+
+@keyframes Putar-Ikon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 576px) {
+    .Tombol-Musik {
+        width: 48px;
+        height: 48px;
+        right: 16px;
+        bottom: 16px;
+        font-size: 26px;
+    }
+}
